@@ -538,5 +538,4 @@ if __name__ == "__main__":
 
     print("Starting Cybersecurity Attack Prediction Backend...")
     print("Server running on http://localhost:8000")
-     port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=10000)
