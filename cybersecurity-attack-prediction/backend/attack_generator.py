@@ -6,7 +6,7 @@ import json
 from datetime import datetime
 
 # Configuration
-const API_BASE_URL = "https://cyber-attack-prediction-project.onrender.com"
+API_BASE_URL = "https://cyber-attack-prediction-project.onrender.com"
 EMAIL = "simulation@cyberguard.ai"
 
 # Attack patterns
