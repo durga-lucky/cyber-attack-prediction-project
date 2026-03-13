@@ -17,6 +17,12 @@ from model_loader import safe_load_model
 load_dotenv()
 
 app = Flask(__name__)
+@app.route("/")
+def home():
+    return {
+        "status": "running",
+        "message": "Cyber Attack Prediction API is working"
+    }
 CORS(app, origins=["http://localhost:3000"], supports_credentials=True)
 
 # OpenRouter Client
