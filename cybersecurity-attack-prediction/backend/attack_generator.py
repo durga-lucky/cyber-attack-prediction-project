@@ -74,7 +74,7 @@ class AttackSimulator:
                 
                 # Send request
                 try:
-                    response = requests.post(API_URL, json=payload, timeout=2)
+                  response = requests.post(f"{API_BASE_URL}/predict", json=payload, timeout=2)
                     if response.status_code == 200:
                         result = response.json()
                         print(f"[{datetime.now().strftime('%H:%M:%S')}] {attack['type']} -> {result.get('prediction')} (Risk: {result.get('riskScore')})")
