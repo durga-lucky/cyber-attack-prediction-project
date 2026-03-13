@@ -23,7 +23,7 @@ def home():
         "status": "running",
         "message": "Cyber Attack Prediction API is working"
     }
-CORS((app, resources={r"/*": {"origins": "*"}}), supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 
 # OpenRouter Client
 openrouter_api_key = os.getenv("OPENROUTER_API_KEY")
