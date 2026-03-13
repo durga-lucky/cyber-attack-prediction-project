@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+venv/
+*.csv
+*.pkl
+node_modules/
+__pycache__/
+.env
